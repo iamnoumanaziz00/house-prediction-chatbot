@@ -80,5 +80,5 @@ def predicted_data():
     return jsonify({'prediction': float(answer) if answer is not None else "No prediction yet"})
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
+    port = int(os.getenv('PORT', 3000))
     app.run(host="0.0.0.0", port=port, debug=os.getenv('DEBUG') == 'True')
